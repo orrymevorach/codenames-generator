@@ -7,6 +7,9 @@ export default function CloseButton({
   handleClick,
   dark = false,
   classNames = '',
+  isInverted,
+  icon,
+  size = '2x',
 }) {
   return (
     <button
@@ -14,10 +17,11 @@ export default function CloseButton({
       className={clsx(
         classNames,
         styles.closeButton,
-        dark && styles.darkButton
+        dark && styles.darkButton,
+        isInverted && styles.isInverted
       )}
     >
-      <FontAwesomeIcon icon={faTimesCircle} size="2x" />
+      <FontAwesomeIcon icon={icon || faTimesCircle} size={size} />
     </button>
   );
 }

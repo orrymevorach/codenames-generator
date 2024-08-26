@@ -5,7 +5,7 @@ import { faPrint } from '@fortawesome/free-solid-svg-icons';
 
 export default function PrintButton({ handlePrint }) {
   return (
-    <Button classNames={styles.printButton} onClick={handlePrint}>
+    <Button classNames={styles.printButton} handleClick={handlePrint}>
       <FontAwesomeIcon icon={faPrint} />
     </Button>
   );

@@ -1,11 +1,11 @@
-@import '@variables';
+@use '@variables' as variables;
 
 .icon {
   box-sizing: initial;
   width: 25px;
   font-size: 25px;
-  background-color: $darkGreen;
-  color: $yellow;
+  background-color: variables.$charcoal;
+  color: white;
   text-align: center;
   margin-bottom: 8px;
   padding: 6px 6px 4px 6px;
@@ -13,15 +13,15 @@
   transition: 0.3s;
   cursor: pointer;
   &:hover {
-    background-color: $yellow;
-    color: $darkGreen;
+    background-color: white;
+    color: variables.$charcoal;
   }
 }
 
 .closeButton {
-  background-color: $beige;
+  background-color: white;
+  color: variables.$charcoal;
   border: none;
-  color: $darkGreen;
   position: absolute;
   right: 16px;
   top: 16px;
@@ -31,17 +31,17 @@
   border-radius: 50%;
   padding: 0;
   &:hover {
-    background-color: $darkGreen;
-    color: $beige;
+    background-color: variables.$charcoal;
+    color: white;
     transition: 0.3s;
   }
   &.darkButton {
-    background-color: rgba(0, 0, 0, 0);
-    color: $beige;
     &:hover {
-      background-color: $beige;
-      color: $darkGreen;
       transition: 0.3s;
     }
+  }
+  &.isInverted {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
   }
 }
