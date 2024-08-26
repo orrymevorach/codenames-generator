@@ -20,6 +20,16 @@
   padding: 10px 0;
 }
 
+@media print {
+  .card {
+    border: 2px solid black;
+    .word {
+      color: white;
+      background-color: black;
+    }
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
