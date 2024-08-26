@@ -2,15 +2,15 @@ import React from 'react';
 import Card from './Card/Card';
 import styles from './Cards.module.scss';
 
-const Cards = React.forwardRef(({ words, setWords }, ref) => {
-  const removeWord = currentWord => {
-    const filteredWords = words.filter(word => word !== currentWord);
-    setWords(filteredWords);
+const Cards = React.forwardRef(({ cards, setCards }, ref) => {
+  const removeCard = currentCard => {
+    const filteredCards = cards.filter(card => card !== currentCard);
+    setCards(filteredCards);
   };
   return (
     <div className={styles.cards} ref={ref}>
-      {words.map(word => (
-        <Card key={word} word={word} removeWord={removeWord} />
+      {cards.map(card => (
+        <Card key={card} card={card} removeCard={removeCard} />
       ))}
     </div>
   );

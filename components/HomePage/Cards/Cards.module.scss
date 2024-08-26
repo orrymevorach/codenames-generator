@@ -5,6 +5,9 @@
 }
 
 @media print {
+  @page {
+    margin: 10mm;
+  }
   .cards {
     gap: 0;
   }
