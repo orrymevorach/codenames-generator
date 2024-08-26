@@ -1,7 +1,9 @@
 @use '@variables' as variables;
 
 .container {
-  background-color: variables.$red;
+  background-image: url('../../../public/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -10,9 +12,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
-.children {
-  position: relative;
-  z-index: 4;
+.overlay {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
 }

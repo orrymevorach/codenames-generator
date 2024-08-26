@@ -1,0 +1,18 @@
+@use '@mixins' as mixins;
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  margin-top: 150px;
+}
+
+.title {
+  text-align: center;
+  @include mixins.FontPrimary;
+  font-size: 60px;
+  margin-bottom: 50px;
+}

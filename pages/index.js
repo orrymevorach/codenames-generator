@@ -1,4 +1,4 @@
-import HomePageContainer from '@/components/HomePage/HomePageContainer/HomePageContainer';
+import Container from '@/components/HomePage/Container/Container';
 import Head from 'next/head';
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <HomePageContainer />
+        <Container />
       </main>
     </>
   );

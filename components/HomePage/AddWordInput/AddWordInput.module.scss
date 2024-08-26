@@ -1,10 +1,13 @@
 .container {
-  width: 500px;
-  margin-bottom: 100px;
+  width: 700px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
 }
 
 .button {
-  width: 230px;
+  width: 240px;
+  padding: 13px 0;
+  margin: 3px 0 0 15px;
 }

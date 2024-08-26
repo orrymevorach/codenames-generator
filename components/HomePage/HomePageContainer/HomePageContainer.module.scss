@@ -1,8 +1,0 @@
-@use '@mixins' as mixins;
-
-.title {
-  text-align: center;
-  @include mixins.FontPrimary;
-  font-size: 40px;
-  margin-bottom: 50px;
-}
