@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./*"],
+      "@mixins": ["./styles/mixins.module.scss"],
+      "@variables": ["./styles/variables.module.scss"]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@use '@variables' as variables;
+
+.container {
+  background-color: variables.$red;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.children {
+  position: relative;
+  z-index: 4;
+}

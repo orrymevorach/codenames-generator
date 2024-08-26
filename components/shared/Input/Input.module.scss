@@ -1,0 +1,30 @@
+@use '@variables' as variables;
+
+.inputContainer {
+  width: 100%;
+}
+
+.input {
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: variables.$mobile) {
+  .inputContainer,
+  .input {
+    width: 100%;
+  }
+}

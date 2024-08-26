@@ -1,0 +1,25 @@
+@use '@variables' as variables;
+@use '@mixins' as mixins;
+
+.button {
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  min-width: 100px;
+  background-color: variables.$yellow;
+  @include mixins.FontPrimary;
+  cursor: pointer;
+  .spinnerIcon {
+    animation: rotate 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

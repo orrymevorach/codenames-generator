@@ -1,0 +1,30 @@
+@use '@variables' as variables;
+
+.card {
+  width: 272px;
+  border: 1px solid white;
+  border-radius: 10px;
+  height: 181px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s linear;
+}
+
+.word {
+  margin-top: 20px;
+  background-color: white;
+  color: variables.$red;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

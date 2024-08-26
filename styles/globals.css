@@ -1,0 +1,51 @@
+@import './fonts.css';
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  color: white;
+  font-family: 'Skyfall';
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+button {
+  cursor: pointer;
+}
