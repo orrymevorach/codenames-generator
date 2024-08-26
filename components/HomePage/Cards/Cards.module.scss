@@ -1,3 +1,5 @@
+@use '@variables' as variables;
+
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -10,5 +12,12 @@
   }
   .cards {
     gap: 0;
+  }
+}
+
+@media screen and (max-width: variables.$tablet) {
+  .cards {
+    grid-template-columns: 1fr;
+    margin-bottom: 50px;
   }
 }

@@ -1,3 +1,5 @@
+@use '@variables' as variables;
+
 .counter {
   font-family: 'Courier New', Courier, monospace;
   font-size: 40px;
@@ -17,4 +19,14 @@
 
 .text {
   position: relative;
+}
+
+@media screen and (max-width: variables.$tablet) {
+  .counter {
+    margin-bottom: 10px;
+  }
+
+  .text {
+    font-size: 25px;
+  }
 }

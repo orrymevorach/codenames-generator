@@ -1,3 +1,5 @@
+@use '@variables' as variables;
+
 .container {
   width: 700px;
   display: flex;
@@ -10,4 +12,18 @@
   width: 240px;
   padding: 13px 0;
   margin: 3px 0 0 15px;
+}
+
+@media screen and (max-width: variables.$tablet) {
+  .container {
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 50px;
+  }
+
+  .button {
+    margin: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
 }

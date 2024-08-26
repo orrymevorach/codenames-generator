@@ -20,7 +20,6 @@ export default function AddCardInput({ cards, setCards }) {
         type="text"
         handleChange={e => setCard(e.target.value)}
         value={card}
-        className={styles.input}
       />
       <Button classNames={styles.button}>Add Card</Button>
     </form>
