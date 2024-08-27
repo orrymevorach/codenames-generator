@@ -1,0 +1,45 @@
+@use '@mixins' as mixins;
+@use '@variables' as variables;
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.instructions {
+  display: none;
+}
+
+.instructionsTitle {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media print {
+  @page {
+    margin: 10mm;
+  }
+  .cards {
+    gap: 0;
+  }
+  .instructions {
+    display: block;
+    margin: 20px 0;
+    page-break-after: always;
+    color: black;
+    @include mixins.FontSecondary;
+    font-size: 18px;
+    li {
+      margin: 7px 0;
+    }
+  }
+}
+
+@media screen and (max-width: variables.$tablet) {
+  .cards {
+    grid-template-columns: 1fr;
+    margin-bottom: 50px;
+  }
+}

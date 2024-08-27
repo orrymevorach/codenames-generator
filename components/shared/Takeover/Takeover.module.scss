@@ -1,4 +1,5 @@
 @use '@variables' as variables;
+@use '@mixins' as mixins;
 
 .overlay {
   content: '';
@@ -26,7 +27,7 @@
   overflow-x: hidden;
   animation: fadeIn linear 0.2s;
   color: variables.$charcoal;
-  font-family: 'Courier New', Courier, monospace;
+  @include mixins.FontSecondary;
 }
 
 @keyframes fadeIn {

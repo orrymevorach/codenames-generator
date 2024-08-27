@@ -1,7 +1,8 @@
 @use '@variables' as variables;
+@use '@mixins' as mixins;
 
 .counter {
-  font-family: 'Courier New', Courier, monospace;
+  @include mixins.FontSecondary;
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 50px;

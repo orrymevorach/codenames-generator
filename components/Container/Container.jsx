@@ -1,12 +1,14 @@
-import Cards from '@/components/HomePage/Cards/Cards';
-import AddCardInput from '@/components/HomePage/AddCardInput/AddCardInput';
 import { useRef, useState } from 'react';
 import styles from './Container.module.scss';
+import Cards from '@/components/Cards/Cards';
+import AddCardInput from '@/components/AddCardInput/AddCardInput';
 import Background from '@/components/shared/Background/Background';
+import Counter from '@/components/Counter/Counter';
+import PrintButton from '@/components/PrintButton/PrintButton';
+import ErrorTakeover, {
+  ERRORS,
+} from '@/components/ErrorTakeover/ErrorTakeover';
 import { useReactToPrint } from 'react-to-print';
-import Counter from '../Counter/Counter';
-import PrintButton from '@/components/HomePage/PrintButton/PrintButton';
-import ErrorTakeover, { ERRORS } from '../ErrorTakeover/ErrorTakeover';
 import useWindowSize from '@/utils/windowSize/useWindowSize';
 
 export default function Container() {
@@ -41,6 +43,9 @@ export default function Container() {
       )}
       <div className={styles.container}>
         <h1 className={styles.title}>Codenames Generator</h1>
+        <p className={styles.description}>
+          Create custom cards to use with Codenames
+        </p>
         {!isDesktop && <Counter cards={cards} handlePrint={handlePrint} />}
         <AddCardInput cards={cards} setCards={setCards} />
         {isDesktop && <Counter cards={cards} handlePrint={handlePrint} />}

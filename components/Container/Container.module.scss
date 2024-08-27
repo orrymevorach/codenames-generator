@@ -15,7 +15,14 @@
   text-align: center;
   @include mixins.FontPrimary;
   font-size: 60px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+.description {
+  text-align: center;
+  @include mixins.FontSecondary;
+  font-size: 22px;
+  margin-bottom: 80px;
 }
 
 @media screen and (max-width: variables.$tablet) {

@@ -20,6 +20,7 @@ export default function AddCardInput({ cards, setCards }) {
         type="text"
         handleChange={e => setCard(e.target.value)}
         value={card}
+        placeholder="Start typing and press enter to add a card"
       />
       <Button classNames={styles.button}>Add Card</Button>
     </form>
