@@ -3,9 +3,9 @@ import styles from './ErrorTakeover.module.scss';
 
 export const ERRORS = {
   NOT_ENOUGH_CARDS: {
-    heading: 'Not Enough Cards!',
+    heading: 'Not Enough Tiles!',
     message:
-      'Each game of codenames requires 25 cards. Please add more cards before printing.',
+      'Each game of codenames requires 25 tiles. Please add more tiles before printing.',
   },
 };
 export default function ErrorTakeover({ setShowErrorTakeover, error }) {

@@ -14,24 +14,24 @@ const Cards = React.forwardRef(({ cards, setCards }, ref) => {
         <ol>
           <li>
             Apply glue to the entire back side of one printed page of custom
-            cards.
+            tiles.
           </li>
           <li>
             Stick the piece of paper to a piece of bristol board (If not using
             bristol board, skip this step)
           </li>
           <li>
-            Apply glue to the entire back side of a second page of custom cards.
+            Apply glue to the entire back side of a second page of custom tiles.
           </li>
           <li>
             Align the pages so that they both cover the edges of the bristol
             board, and the words are facing up on both sides. Once aligned stick
-            them together so that the cards are double sided. If not using
+            them together so that the tiles are double sided. If not using
             bristol board, align the pages and stick them to eachother.
           </li>
-          <li>Cut out the border around the entire grid of cards.</li>
+          <li>Cut out the border around the entire grid of tiles.</li>
           <li>Then, cut the border between each row.</li>
-          <li>Lastly, cut the border between each card.</li>
+          <li>Lastly, cut the border between each tile.</li>
         </ol>
       </div>
       <div className={styles.cards}>

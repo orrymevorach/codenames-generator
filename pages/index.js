@@ -8,7 +8,7 @@ export default function Home() {
         <title>Codenames Generator</title>
         <meta
           name="description"
-          content="Create custom cards to use with Codenames."
+          content="Create custom tiles to use with Codenames."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/detectiveIcon.png" />

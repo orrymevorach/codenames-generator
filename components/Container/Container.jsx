@@ -67,7 +67,7 @@ export default function Container() {
             className={styles.description}
             style={{ y: descriptionY, opacity: descriptionOpacity }}
           >
-            Create custom cards to use with Codenames
+            Create custom tiles to use with Codenames
           </motion.p>
           <motion.button
             className={clsx(styles.chevron, animations.pulse)}
