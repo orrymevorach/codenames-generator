@@ -4,6 +4,7 @@
   background-image: url('../../../public/bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -21,4 +22,10 @@
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: variables.$mobile) {
+  .container {
+    background-position: default;
+  }
 }

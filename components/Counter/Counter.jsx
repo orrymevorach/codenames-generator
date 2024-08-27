@@ -11,7 +11,7 @@ export default function Counter({ cards, handlePrint }) {
   const numberOfCards = cards.length;
   const text =
     numberOfCards >= 25 ? (
-      <p>
+      <p className={styles.text}>
         You have {numberOfCards} cards. <br />
         Click{' '}
         <Button handleClick={handlePrint} classNames={animations.pulse}>
@@ -35,7 +35,7 @@ export default function Counter({ cards, handlePrint }) {
       {showTakeover && (
         <Takeover handleClose={() => setShowTakeover(false)}>
           <p className={styles.infoMessage}>
-            Each game of codenames requires 25 cards. Please add{' '}
+            Each game of codenames requires 25 cards. Please add at least{' '}
             {25 - numberOfCards} more cards before printing.
           </p>
         </Takeover>

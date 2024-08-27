@@ -42,10 +42,12 @@ export default function Container() {
         />
       )}
       <div className={styles.container}>
-        <h1 className={styles.title}>Codenames Generator</h1>
-        <p className={styles.description}>
-          Create custom cards to use with Codenames
-        </p>
+        <div className={styles.textContainer}>
+          <h1 className={styles.title}>Codenames Generator</h1>
+          <p className={styles.description}>
+            Create custom cards to use with Codenames
+          </p>
+        </div>
         {!isDesktop && <Counter cards={cards} handlePrint={handlePrint} />}
         <AddCardInput cards={cards} setCards={setCards} />
         {isDesktop && <Counter cards={cards} handlePrint={handlePrint} />}

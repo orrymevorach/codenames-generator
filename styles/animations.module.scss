@@ -13,3 +13,19 @@
     transform: scale(1);
   }
 }
+
+.backgroundPulse {
+  animation: pulseSmall 4s infinite ease-in-out;
+}
+
+@keyframes pulseSmall {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
