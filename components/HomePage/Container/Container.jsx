@@ -22,6 +22,9 @@ export default function Container() {
         setError(ERRORS.NOT_ENOUGH_CARDS);
         throw 'error';
       }
+      gtag('event', 'click', {
+        event_button: 'print_button',
+      });
     },
   });
 

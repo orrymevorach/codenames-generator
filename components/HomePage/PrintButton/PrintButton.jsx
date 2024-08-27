@@ -6,12 +6,6 @@ import clsx from 'clsx';
 import animations from '@/styles/animations.module.scss';
 
 export default function PrintButton({ handlePrint, cards }) {
-  const handleClick = () => {
-    handlePrint();
-    gtag('event', 'click', {
-      event_button: 'print_button',
-    });
-  };
   return (
     <Button
       classNames={clsx(
@@ -19,7 +13,7 @@ export default function PrintButton({ handlePrint, cards }) {
         cards.length >= 25 && animations.pulse,
         cards.length < 25 && styles.disabled
       )}
-      handleClick={handleClick}
+      handleClick={handlePrint}
     >
       <FontAwesomeIcon icon={faPrint} />
     </Button>
