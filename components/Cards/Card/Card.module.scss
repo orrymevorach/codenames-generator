@@ -31,7 +31,7 @@ button.close {
     border: 1px dashed black;
     border-radius: 0;
     // Create a page break after 5th row
-    &:nth-child(15n + 1) {
+    &:nth-child(12n + 1) {
       page-break-before: always;
     }
     .word {
