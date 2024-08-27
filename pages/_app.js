@@ -1,6 +1,9 @@
 import { WindowSizeProvider } from '@/utils/windowSize/windowSizeContext';
 import '../styles/globals.css';
 import Script from 'next/script';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { config } from '@fortawesome/fontawesome-svg-core';
+config.autoAddCss = false;
 
 export default function App({ Component, pageProps }) {
   return (
