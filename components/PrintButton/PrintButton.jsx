@@ -15,7 +15,7 @@ export default function PrintButton({ handlePrint, cards }) {
       )}
       handleClick={handlePrint}
     >
-      <FontAwesomeIcon icon={faPrint} />
+      <FontAwesomeIcon icon={faPrint} color="black" />
     </Button>
   );
 }
