@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   animation: fadeIn 1s linear;
   position: relative;
   @include mixins.FontTertiary;
@@ -22,6 +23,19 @@
   width: 100%;
   text-align: center;
   padding: 10px 0;
+}
+
+.inverted {
+  display: none;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  transform: scale(-1, -1);
+  position: absolute;
+  top: 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.4);
 }
 
 button.close {
@@ -40,6 +54,10 @@ button.close {
     .word {
       color: white;
       background-color: black;
+      margin-top: 70px;
+    }
+    .inverted {
+      display: block;
     }
     .close {
       display: none;

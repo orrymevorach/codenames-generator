@@ -4,6 +4,7 @@ import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 export default function Card({ card, removeCard }) {
   return (
     <div className={styles.card}>
+      <p className={styles.inverted}>{card}</p>
       <p className={styles.word}>{card}</p>
       <CloseButton
         handleClick={() => removeCard(card)}
