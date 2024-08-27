@@ -1,6 +1,6 @@
 import CloseButton from '@/components/shared/CloseButton/CloseButton';
 import styles from './Card.module.scss';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 export default function Card({ card, removeCard }) {
   return (
     <div className={styles.card}>
@@ -9,7 +9,7 @@ export default function Card({ card, removeCard }) {
         handleClick={() => removeCard(card)}
         classNames={styles.close}
         isInverted
-        icon={faTimes}
+        icon={faTrashAlt}
         size="lg"
       />
     </div>

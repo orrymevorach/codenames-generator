@@ -10,7 +10,8 @@ export default function PrintButton({ handlePrint, cards }) {
     <Button
       classNames={clsx(
         styles.printButton,
-        cards.length >= 25 && animations.pulse
+        cards.length >= 25 && animations.pulse,
+        cards.length < 25 && styles.disabled
       )}
       handleClick={handlePrint}
     >
