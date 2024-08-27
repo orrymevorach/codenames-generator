@@ -1,0 +1,28 @@
+@use '@variables' as variables;
+@use '@mixins' as mixins;
+
+.footer {
+  position: relative;
+  z-index: 102;
+  background-color: variables.$charcoal;
+  text-align: center;
+  padding: 15px 0;
+  color: white;
+  @include mixins.FontTertiary;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 50px;
+  a,
+  a:active {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: variables.$mobile) {
+  .footer {
+    font-size: 11px;
+    margin-top: 20px;
+    padding: 10px 5px;
+  }
+}
