@@ -17,7 +17,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Container() {
-  const [cards, setCards] = useState(['bachelor', 'bachelorette', 'birthday']);
+  const [cards, setCards] = useState(['add', 'custom', 'tiles']);
   const [showErrorTakeover, setShowErrorTakeover] = useState(false);
   const [error, setError] = useState('');
   const ref = useRef();
@@ -40,12 +40,13 @@ export default function Container() {
   // Animations
   const { scrollY } = useScroll();
   const scale = useTransform(scrollY, [0, 300], [1, 0.8]);
-  const titleY = useTransform(scrollY, [0, 300], [0, 100]);
+  const titleY = useTransform(scrollY, [0, 300], [0, 150]);
   const descriptionY = useTransform(scrollY, [0, 300], [0, -100]);
   const descriptionOpacity = useTransform(scrollY, [0, 100], [1, 0]);
   const contentOpacity = useTransform(scrollY, [0, 300], [0, 1]);
   const contentY = useTransform(scrollY, [0, 300], [0, -20]);
-  const buttonOpacity = useTransform(scrollY, [0, 50], [1, 0]);
+  const buttonOpacity = useTransform(scrollY, [0, 100], [1, 0]);
+  const buttonY = useTransform(scrollY, [0, 300], [0, -100]);
 
   const handleClickChevron = () => window.scrollTo(0, 300);
   return (
@@ -73,7 +74,7 @@ export default function Container() {
           <motion.button
             className={clsx(styles.chevron, animations.pulse)}
             onClick={handleClickChevron}
-            style={{ opacity: buttonOpacity }}
+            style={{ opacity: buttonOpacity, y: buttonY }}
           >
             <FontAwesomeIcon icon={faChevronDown} color="white" size="5x" />
           </motion.button>
