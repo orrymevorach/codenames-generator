@@ -1,5 +1,5 @@
 import Container from '@/components/Container/Container';
-import Footer from '@/components/shared/Footer/footer';
+import Footer from '@/components/shared/Footer/Footer';
 import Head from 'next/head';
 
 export default function Home() {
